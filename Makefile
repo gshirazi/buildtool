@@ -15,7 +15,7 @@ clean:
 
 
 latest-alpine:
-	docker build -t $(PROJECT_APLINE)-3.9:1.12 buildtool-alpine
+	docker buildx build --platform linux/arm64  -t $(PROJECT_APLINE)-3.9:1.12-arm64 buildtool-alpine
 
 
 clean-alpine:
